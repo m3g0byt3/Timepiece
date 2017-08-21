@@ -52,6 +52,7 @@ now.truncated(from: .day)
 now.stringIn(dateStyle: .long, timeStyle: .medium)
 now.dateString(in: .medium)
 now.timeString(in: .short)
+now.stringIn(dateFormat: "'LDML representation:' yyyy/MM/dd"))
 
 3.days.string(in: .full)
 ```

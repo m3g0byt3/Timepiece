@@ -331,4 +331,16 @@ extension Date {
     public func timeString(in timeStyle: DateFormatter.Style) -> String {
         return stringIn(dateStyle: .none, timeStyle: timeStyle)
     }
+    
+    /// Creates a new `String` instance representing the receiver formatted in given custom LDML format string.
+    ///
+    /// - parameter dateFormat: The LDML format string (see http://www.unicode.org/reports/tr35/tr35-45/tr35-dates.html#Date_Field_Symbol_Table for reference)
+    ///
+    /// - returns: The created `String` instance.
+    public func stringIn(dateFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = dateFormat
+        
+        return dateFormatter.string(from: self)
+    }
 }

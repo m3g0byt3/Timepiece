@@ -211,4 +211,9 @@ class DateTests: XCTestCase {
         let sampleString = sample.timeString(in: .short)
         XCTAssertEqual(sampleString, "8:25 PM")
     }
+    
+    func testStringInFormat() {
+        let sampleString = sample.stringIn(dateFormat: "yyyy-MM-dd")
+        XCTAssertEqual(sampleString, "2014-08-15")
+    }
 }

@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+## 1.2.1
+Released on 2017-08-21.
+
+### Added
+* `stringIn(dateFormat:)`, which creates a `String` representation of `Date` instance based on LDML format string.
+
 ## 1.2.0
 Released on 2017-04-30.
 
